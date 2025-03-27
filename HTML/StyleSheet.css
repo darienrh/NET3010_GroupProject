@@ -1,5 +1,8 @@
-h1{
+header h1{
     text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    font-style: oblique;
 }
 
 .navbar{
@@ -12,17 +15,30 @@ h1{
 }
 
 .logo img{
-    max-width: 200px;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
+
+.logo-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 nav{    
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100%;
     flex-grow: 1;
-    max-width: 1000px;
+    max-width: none;
+    width: 100%;
     background-color: #b4dccf;
+    padding: 0.01px;
+    flex-wrap: wrap;
 }
 
 nav ul{
@@ -46,6 +62,7 @@ nav ul{
 
 .navbar a:hover{
     background-color: #63b2a7;
+    text-decoration: underline;
 }
 
 nav ul li{
@@ -53,14 +70,21 @@ nav ul li{
     
 }
 
-html, body {
+body {
     height: 100%;  
     margin: 0;     
+    padding: 0;
+    line-height: 1.4;
+    background-color: #63b2a7;
     display: flex;
     flex-direction: column;
 }
 
 main {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px), 1fr);
+    gap: 15px;
     flex: 1; 
 }
 
