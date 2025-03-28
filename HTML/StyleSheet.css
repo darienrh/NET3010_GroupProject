@@ -151,6 +151,73 @@ main {
     border-radius: 3px;
 }
 
+/* Styling for Login Page */
+
+.loginpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #63b2a7; /* Light background color */
+}
+
+.container header{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.container .form{
+    margin-top: 20px;
+}
+
+.form .row{
+    display: flex;
+    column-gap: 15px;
+    justify-content: space-between;
+
+}
+
+.row .Input{
+    flex: 1;
+}
+
+.Input{
+    display: flex; 
+    flex-direction: column;
+    text-align: left;
+    width: 200%;
+}
+
+.Input label{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.Input input{
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form .Input{
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+    
+}
+
+
+
+
+
+
 
 
 
