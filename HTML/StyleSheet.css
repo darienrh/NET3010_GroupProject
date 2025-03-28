@@ -168,9 +168,7 @@ main {
     padding: 5px 10px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
+    cursor: pointer;    
 }
 
 .button:hover {
