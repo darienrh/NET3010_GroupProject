@@ -106,6 +106,55 @@ main {
     overflow-x: auto;
 }
 
+
+
+/* Styling for the Products Page */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.products img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* ensure containers dont overflow */
+.products section {
+    background-color: #5350504b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(27, 27, 27, 0.404);
+    max-width: auto;
+    width: 100%;
+}
+
+.products p {
+    margin: 10px 0;
+}
+
+.products a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #70604a;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+
+
+
+
 footer {
     background-color: #070b42;  
     color: white;               
