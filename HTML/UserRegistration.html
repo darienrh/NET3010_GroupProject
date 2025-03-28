@@ -50,7 +50,25 @@
                 <label>Password</label>
                 <input type="text" placeholder="Enter Password">
             </div>
+            <div class="button-wrapper">
+                <button type="button" id="submitButton" class="button">
+                    Register Account
+                </button>
+            </div>
         </form>
+        <script>
+            document.addEventListener(
+                'DOMContentLoaded', () => {
+                    document.getElementById('submitButton').
+                        addEventListener('click', function () {
+                            alert('Account Registered!');
+                        });
+                }
+            )
+        </script>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2025 Gizmo Galaxy. All rights reserved.</p>
+    </footer>
 </body>
