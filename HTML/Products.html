@@ -3,9 +3,10 @@
 
 <!-- Add meta information -->
 <head>
+    <link rel="stylesheet" href="StyleSheet.css">
 
 
-    <title>Our Clothing Website!</title>
+    <title>Welcome to Gizmo Galaxy!</title>
 </head>
 <body>
     <header>
@@ -13,21 +14,40 @@
         <h1>
             <i>Look at our Products!</i>
         </h1>
-        <nav>
-            <a href="index.html">Home</a>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo.png" width="200px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
 
-            <a href="Products.html">Shop/Products</a>
 
-            <a href="About.html">About</a>
+        <main class="products">
+            <section>
+                <h2 class="section-heading">All Products</h2>
+                <img src="Images/Micro_Processor.jpg" alt="Micro_Processor">
+                <p>Amazing high quality products.</p>
+                <a href="Cart.html">Purchase</a>
+            </section>
+            <section>
+            <h2 class="section-heading">Computer Components</h2>
+                <img src="Images/Mobo_concrete_background.jpg" alt="All Products">
+                <p>Amazing high quality products.</p>
+                <a href="Cart.html">Purchase</a>
+            </section>  
+            <section>
+                <h2 class="section-heading">Computer Peripherals</h2>
+                <img src="Images/jay-zhang-dF0nne1hnzQ-unsplash.jpg" alt="Electric Guitar">
+                <p>Amazing high quality products.</p>
+                <a href="Cart.html">Purchase</a>
+            </section>
 
-            <a href="Account.html">
-                <button>Sign Up / Log In</button>
-            </a>
-
-            <a href="Cart.html">
-                <button>View Cart</button>
-            </a>
-
-        </nav>
     </header>
 </body>
