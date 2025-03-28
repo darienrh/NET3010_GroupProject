@@ -10,10 +10,13 @@ WHERE
     AND (stock > 0);
 
 -- Search by Exact Model Number
-SELECT * FROM products WHERE model_number = 'TUF-RTX4080-16G-GAMING';
+-- Search by Exact Model Number (User Input)
+SELECT * 
+FROM products 
+WHERE model_number = ?; --the ? will be replaced by the user input in java
 
 -- Search for Only In-Stock Items
 SELECT * FROM products WHERE stock > 0;
 
 -- Search by Price Range
-SELECT * FROM products WHERE price BETWEEN 100 AND 500;
+SELECT * FROM products WHERE price BETWEEN 0 AND 1000;
