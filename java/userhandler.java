@@ -4,7 +4,8 @@ public class UserAuthHandler {
     private static final String URL = "jdbc:sqlite:users.db"; // Database connection URL pointing to a relative path for portability
 
     // Function to sign up a new user
-    public static boolean signUpUser(String firstName, String lastName, String phoneNumber, String email, String postalCode, String password) {
+    public static boolean signUpUser(String firstName, String lastName, String phoneNumber, String email, String postalCode, String password) // boolean return type for success/failure
+     {
         try (Connection conn = DriverManager.getConnection(URL)) { // Establish database connection
             // Check if email already exists
             String checkQuery = "SELECT COUNT(*) FROM users WHERE email = ?";
