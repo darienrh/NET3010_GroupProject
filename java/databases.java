@@ -1,7 +1,7 @@
 import java.sql.*; // Importing SQL package for database operations
 
 public class DatabaseHandler {
-    private static final String URL = "jdbc:sqlite:/c:/Users/ramir/groupprojectwebprogramming/NET3010_GroupProject/java/database.sql"; // Database connection URL using SQLite file
+    private static final String URL = "jdbc:sqlite:database.db"; // Database connection URL pointing to a relative path for portability
     private static final String USER = ""; // SQLite does not require a username
     private static final String PASSWORD = ""; // SQLite does not require a password
 

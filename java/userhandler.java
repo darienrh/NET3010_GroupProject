@@ -1,7 +1,7 @@
 import java.sql.*; // Import SQL package for database operations
 
 public class UserAuthHandler {
-    private static final String URL = "jdbc:sqlite:/c:/Users/ramir/groupprojectwebprogramming/NET3010_GroupProject/sql/users.sql"; // Database connection URL pointing to users.sql file
+    private static final String URL = "jdbc:sqlite:users.db"; // Database connection URL pointing to a relative path for portability
 
     // Function to sign up a new user
     public static boolean signUpUser(String firstName, String lastName, String phoneNumber, String email, String postalCode, String password) {
