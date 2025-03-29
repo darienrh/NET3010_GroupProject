@@ -1,9 +1,9 @@
 import java.sql.*; // Importing SQL package for database operations
 
-public class DatabaseHandler {
+public class databases {
     private static final String URL = "jdbc:sqlite:database.db"; // Database connection URL pointing to a relative path for portability
-    private static final String USER = ""; // SQLite does not require a username
-    private static final String PASSWORD = ""; // SQLite does not require a password
+    //private static final String USER = ""; // SQLite does not require a username
+    //private static final String PASSWORD = ""; // SQLite does not require a password
 
     // Function to search for a product based on filters
     public static void searchProduct(String manufacturer, String category, int yearMade, String storageCapacity, double minPrice, double maxPrice) {
