@@ -71,21 +71,21 @@ nav ul li{
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 100%;  
     margin: 0;     
     padding: 0;
     line-height: 1.4;
     background-color: #ffffff7d;
-    display: flex;
-    flex-direction: column;
 }
 
 main {
+    flex: 1; 
     padding: 25px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px), 1fr);
     gap: 15px;
-    flex: 1; 
 }
 
 /* For the Image slider on home page -- Alex*/
@@ -262,7 +262,7 @@ footer {
     border-radius: 0px;          /* Rounded corners */
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     height: 30px;
     margin-top: 30px;
