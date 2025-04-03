@@ -19,7 +19,7 @@
                 <p>Front End Designer</p>
             </div>
             <div class="member">
-                <img src="/images/blank-profile-picture.png" alt="Darien">
+                <img src="blank-profile-picture.png" alt="Darien">
                 <h2>Darien Ramirez-Hennessey</h2>
                 <p>Back End Developer</p>
             </div>
