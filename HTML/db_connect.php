@@ -1,9 +1,9 @@
 <?php
 $host = 'localhost';
 $db   = 'my_website_db';
-$user = 'my_website_user';
-$pass = 'password123'; // Use a strong password
-$charset = 'utf8mb4';
+$user = 'root';
+$pass = ''; // Use a strong password
+$charset = 'utf8mb4_general_ci';
 
 // Create connection using MySQLi
 $conn = new mysqli($host, $user, $pass, $db);

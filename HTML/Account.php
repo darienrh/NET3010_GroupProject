@@ -5,7 +5,7 @@
 <head>
     <link rel="stylesheet" href="StyleSheet.css">
 
-    <title>Our Clothing Website!</title>
+    <title>Our Website!</title>
 </head>
 <body>
     <header>
