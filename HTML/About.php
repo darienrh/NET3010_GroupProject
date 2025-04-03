@@ -4,7 +4,7 @@
 <main>
         <section class="team">
             <div class="member">
-                <img src="Bunny.png" alt="Rayyan">
+                <img src="../images/Bunny.png" alt="Rayyan">
                 <h2>Rayyan Mojaddedi</h2>
                 <p>Team Leader</p>
             </div>
