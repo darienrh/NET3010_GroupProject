@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- Add meta information -->
-<head>
-    <link rel="stylesheet" href="StyleSheet.css">
-
-    <title>Our Website!</title>
-</head>
-<body>
-    <header>
-        <img class="logo" src="" alt="">
-        <h1>
-            <i>Welcome to your Account!</i>
-        </h1>
-        <nav>
-            <li><a href="LandingPage.html">Home</a></li>
-            <li><a href="Products.html">Products</a></li>
-            <li><a href="Cart.html">Cart</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="UserRegistration.html">Sign up</a></li>
-            <li><a href="LoginPage.html">Login</a></li>
-
-        </nav>
-    </header>
+<?php include 'header.php'; ?>    
 
     <script>
         // Form submission event listener

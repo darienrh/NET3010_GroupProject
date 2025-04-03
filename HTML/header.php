@@ -26,6 +26,8 @@
                     <li><a href="Products.php">Products</a></li>
                     <li><a href="Cart.php">Cart</a></li>
                     <li><a href="About.php">About</a></li>
+                    <li><a href="LoginPage.php">Login</a></li>
+                    <li><a href="UserRegistration.php">Sign Up</a></li>
                     
                     <?php 
                     // if(isset($_SESSION['user_id'])): ?>
