@@ -2,33 +2,7 @@
 <html lang="en">
 
 <!-- Add meta information -->
-<head>
-    <link rel="stylesheet" href="StyleSheet.css">
-
-
-    <title>Welcome to Gizmo Galaxy!</title>
-</head>
-<body>
-    <header>
-        <img class="logo" src="" alt="">
-        <h1>
-            <i>Look at our Products!</i>
-        </h1>
-        <div class="navbar">
-            <div class="logo">
-                <img src="Logo.png" width="200px">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="LandingPage.html">Home</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="Cart.html">Cart</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="UserRegistration.html">Sign up</a></li>
-                <li><a href="LoginPage.html">Login</a></li>
-                </ul>
-            </nav>
-        </div>
+<?php include 'header.php'; ?>
 
 
         <main class="products">
