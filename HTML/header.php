@@ -1,9 +1,9 @@
 <?php
 // Start the session (needed for login functionality)
-session_start();
+// session_start();
 
 // Database connection (using PDO for better security)
-require_once 'db_connect.php';
+// require_once 'db_connect.php';
 ?>
 
 <!DOCTYPE html>
