@@ -1,48 +1,23 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "computer_parts_db";
+$host = 'localhost';
+$db   = 'my_website_db';
+$user = 'my_website_user';
+$pass = 'password123'; // Use a strong password
+$charset = 'utf8mb4';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Create connection using MySQLi
+$conn = new mysqli($host, $user, $pass, $db);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Example query function
-function getProducts($search = '', $inStockOnly = false) {
-    global $conn;
-    
-    $sql = "SELECT * FROM products WHERE 1=1";
-    
-    if (!empty($search)) {
-        $search = $conn->real_escape_string($search);
-        $sql .= " AND (product_name LIKE '%$search%' 
-                 OR manufacturer LIKE '%$search%'
-                 OR description LIKE '%$search%')";
-    }
-    
-    if ($inStockOnly) {
-        $sql .= " AND in_stock = TRUE";
-    }
-    
-    $sql .= " ORDER BY product_name ASC";
-    
-    $result = $conn->query($sql);
-    $products = [];
-    
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            $products[] = $row;
-        }
-    }
-    
-    return $products;
+// Alternatively using PDO (more secure)
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$db;charset=$charset", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ATTR_ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
-
-// Close connection (call when done)
-// $conn->close();
 ?>
