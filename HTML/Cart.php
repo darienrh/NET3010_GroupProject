@@ -3,9 +3,10 @@
 
 <!-- Add meta information -->
 <head>
+    
+    <link rel="stylesheet" href="StyleSheet.css">
 
-
-    <title>Our Clothing Website!</title>
+    <title>Your Cart</title>
 </head>
 <body>
     <header>
@@ -13,17 +14,28 @@
         <h1>
             <i>Here are your Cart Contents!</i>
         </h1>
-        <nav>
-            <li><a href="LandingPage.html">Home</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="Cart.html">Cart</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="UserRegistration.html">Sign up</a></li>
-                <li><a href="LoginPage.html">Login</a></li>
-
-
-        </nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo.png" width="200px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="LandingPage.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="UserRegistration.html">Sign up</a></li>
+                    <li><a href="LoginPage.html">Login</a></li>
+                </ul>
+            </nav>
+    
+        </div>
     </header>
+
+    <main>
+        <h1>Your Cart</h1>
+        <p>Your cart is currently empty.</p>
+    </main>
 
     
     <footer>

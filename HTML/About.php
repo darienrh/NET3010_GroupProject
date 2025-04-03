@@ -6,7 +6,7 @@
     
     <link rel="stylesheet" href="StyleSheet.css">
 
-    <title>Our Clothing Website!</title>
+    <title>Team Members</title>
 </head>
 <body>
     <header>
@@ -14,17 +14,48 @@
         <h1>
             <i>Meet the Team!</i>
         </h1>
-        <nav>
-            <li><a href="LandingPage.html">Home</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="Cart.html">Cart</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="UserRegistration.html">Sign up</a></li>
-                <li><a href="LoginPage.html">Login</a></li>
-
-        </nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo.png" width="200px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="LandingPage.php">Home</a></li>
+                    <li><a href="Products.php">Products</a></li>
+                    <li><a href="Cart.php">Cart</a></li>
+                    <li><a href="About.php">About</a></li>
+                    <li><a href="UserRegistration.php">Sign up</a></li>
+                    <li><a href="LoginPage.php">Login</a></li>
+                </ul>
+            </nav>
+    
+        </div>
     </header>
-
+<!--Team memeber grid -Rayyan--> 
+<main>
+        <section class="team">
+            <div class="member">
+                <img src="Bunny.png" alt="Rayyan">
+                <h2>Rayyan Mojaddedi</h2>
+                <p>Team Leader</p>
+            </div>
+            <div class="member">
+                <img src="" alt="Alex">
+                <h2>Alex Barnard</h2>
+                <p>Front End Developer</p>
+            </div>
+            <div class="member">
+                <img src="" alt="Rafay">
+                <h2>Rafay Khan</h2>
+                <p>Front End Designer</p>
+            </div>
+            <div class="member">
+                <img src="" alt="Dariej">
+                <h2>Darien Ramirez-Hennessey</h2>
+                <p>Back End Developer</p>
+            </div>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2025 Gizmo Galaxy. All rights reserved.</p>
     </footer>
