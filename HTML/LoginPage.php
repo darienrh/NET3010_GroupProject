@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include 'header.php'; ?>
 
-
-<head>
-    <title>Login</title>
-   <link rel="stylesheet" href="StyleSheet.css">
-
-</head>
-
-<body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="Logo.png" width="200px">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="LandingPage.html">Home</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="Cart.html">Cart</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="UserRegistration.html">Sign up</a></li>
-                <li><a href="LoginPage.html">Login</a></li>
-            </ul>
-        </nav>
-    </div>
     <main class=login-page>
         <section class="container">
         <header>Account Login</header>
