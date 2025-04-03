@@ -2,19 +2,13 @@ CREATE DATABASE computer_parts_db;
 USE computer_parts_db;
 
 CREATE TABLE products (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    manufacturer VARCHAR(100), -- exmples: Intel, AMD, NVIDIA, etc.
-    brand VARCHAR(100), -- examples : ASUS, MSI, Gigabyte, Corsair, etc.
-    item_name VARCHAR(255), -- examples: "Ryzen 9 7950X", "GeForce RTX 4080"
-    model_number VARCHAR(100), -- examples: Exact model like "BX8071513700K"
-    category VARCHAR(100), -- exampls: CPU, GPU, SSD, RAM, etc.
-    year_made YEAR NOT NULL,
-    storage_capacity VARCHAR(50), --examples:  "1TB", "16GB", NULL for CPUs
-    socket_type VARCHAR(50), -- examples: "AM5", "LGA 1700", "PCIe 4.0"
-    form_factor VARCHAR(50), -- examples: "ATX", "M.2 2280", "DIMM"
-    price DECIMAL(10,2),
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(100) NOT NULL,
+    manufacturer VARCHAR(100),
+    price DECIMAL(10, 2) NOT NULL,
+    in_stock BOOLEAN DEFAULT TRUE,
     description TEXT,
-    stock INT NOT NULL DEFAULT 0 --examples: Available quantity
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 --user table

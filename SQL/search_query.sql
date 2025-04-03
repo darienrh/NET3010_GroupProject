@@ -1,6 +1,6 @@
 -- Search by Manufacturer, Item Name, Year, or Storage
 SELECT * 
-FROM products
+FROM computer_parts_db
 WHERE 
     (manufacturer LIKE '%AMD%' OR manufacturer LIKE '%Intel%')
     AND (category = 'CPU' OR category = 'GPU')
