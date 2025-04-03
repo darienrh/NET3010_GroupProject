@@ -3,6 +3,7 @@
 
 <!-- Add meta information -->
 <?php include 'header.php'; ?>
+<h1><i>Look at our Products!</i></h1>
 
 
         <main class="products">

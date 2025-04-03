@@ -43,5 +43,4 @@
                 </ul>
             </nav>
         </div>
-        <h1><i>Look at our Products!</i></h1>
     </header>
