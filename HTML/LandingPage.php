@@ -5,9 +5,9 @@
     <section class="container">
         <div class="slider-wrapper">
             <div class="slider">
-                <img id="slide-1" src="RAM_wood_background.jpg" alt="GPU Image">
-                <img id="slide-2" src="Mobo_concrete_background.jpg" alt="Micro_Processor">
-                <img id="slide-3" src="Mouse_concrete_background.jpg" alt="PC">
+                <img id="slide-1" src="Images/RAM_wood_background.jpg" alt="GPU Image">
+                <img id="slide-2" src="Images/Mobo_concrete_background.jpg" alt="Micro_Processor">
+                <img id="slide-3" src="Images/Mouse_concrete_background.jpg" alt="PC">
             </div>
             <div class="slider-nav">
                 <a href="#slide-1"></a>
@@ -19,9 +19,16 @@
 
 
 
-    <header>
+    <div class="hero">
+        <div class="hero-content">
         <h1>Welcome to Gizmo Galaxy - The home of out of this world deals</h1>
-    </header>
+        </div>
+    </div>
+    
+    <div id="price-display"></div>
+    <script src="Java/api.js"></script>
+
+
 
 
     <?php include 'footer.php'; ?>
