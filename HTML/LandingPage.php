@@ -2,7 +2,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Image Slider on the home page -->
-    <section class="container">
+
+    <section class="landing-slider">
         <div class="slider-wrapper">
             <div class="slider">
                 <img id="slide-1" src="Images/RAM_wood_background.jpg" alt="GPU Image">
@@ -16,14 +17,37 @@
             </div>
         </div>
     </section>
-
-
-
     <div class="hero">
         <div class="hero-content">
         <h1>Welcome to Gizmo Galaxy - The home of out of this world deals</h1>
         </div>
     </div>
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-container">
+            <div class="product">
+                <h3>Product 1</h3>
+                <p>$99.99</p>
+                <img src="Images/AIO_concrete_background.jpg" alt="Product 1">
+            </div>
+            <div class="product">
+                <h3>Product 2</h3>
+                <p>$129.99</p>
+                <img src="Images/RAM_white_background.jpg" alt="Product 2">
+            </div>
+            <div class="product">
+                <h3>Product 3</h3>
+                <p>$149.99</p>
+                <img src="Images/Fans_concrete_background.jpg" alt="Product 3">
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="about-container">
+            <h4>Some info about the company</h4>
+            <p>Background about us</p>
+        </div>
+    </section>
     
     <div id="price-display"></div>
     <script src="Java/api.js"></script>

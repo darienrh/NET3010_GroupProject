@@ -39,6 +39,7 @@ nav{
     background-color: #b4dccf;
     padding: 0.01px;
     flex-wrap: wrap;
+    left: 1rem;
 }
 
 nav ul{
@@ -88,6 +89,10 @@ main {
     flex: 1; 
 }
 
+.main-content{
+    min-height: calc(90vh - 60px);
+}
+
 
 /* Hero Section Styles -- Alex*/
 .hero {
@@ -95,7 +100,7 @@ main {
     top: 80px;
     left: 0;
     width: 100vw;  /* Full viewport width */
-    height: 50vh;  /* Height should match the slider height or adjust as needed */
+    height: 90vh;  /* Height should match the slider height or adjust as needed */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +132,7 @@ main {
 .slider {
     display: flex;
     width: 100vw;
-    height: 50vh; /* Adjust height as needed */
+    height: 90vh; /* Adjust height as needed */
     aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -173,6 +178,13 @@ main {
     opacity: 1;
 }
 
+.product img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+    border-radius: 10px; /* Rounded corners */
+}
 
 /* Styling for the Products Page -- Alex*/
 
@@ -223,7 +235,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 .button {
@@ -260,7 +272,7 @@ main {
     font-weight: bold;
 }
 
-/* .container {
+.container {
     width: 400px;
     padding: 20px;
     background: rgba(155, 156, 156, 0.618);
@@ -268,7 +280,7 @@ main {
     border-radius: 10px;
     padding-bottom: 20px;
     margin-bottom: 100px;
-} */
+}
 
 .container .form{
     margin-top: 20px;
@@ -326,7 +338,7 @@ footer {
     border-radius: 0px;          /* Rounded corners */
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     height: 30px;
     margin-top: 30px;
