@@ -72,7 +72,5 @@
         });
     </script>
 
-    <footer>
-        <p>&copy; 2025 Gizmo Galaxy. All rights reserved.</p>
-    </footer>
+    <?php include 'footer.php'; ?>
 </body>
