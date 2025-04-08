@@ -1,3 +1,4 @@
+//everyone worked on this file
 <?php
 session_start(); // session must start!!!!!!
 ?>

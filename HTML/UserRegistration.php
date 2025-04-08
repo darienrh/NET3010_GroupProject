@@ -1,5 +1,7 @@
+//Darien Ramirez-Hennessey
+// Date: 04/08/2025
 <?php
-ob_start(); // Optional: helps prevent header issues
+ob_start(); //helps prevent header issues
 
 // Run the database creation script silently
 include_once 'database_create.php'; // Will only run once per page load

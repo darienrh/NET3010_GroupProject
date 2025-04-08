@@ -19,6 +19,7 @@
                     <h2>Rafay Khan</h2>
                     <p>Front End Designer</p>
                 </div>
+                <!--Team memeber grid for Darien--> 
                 <div class="member">
                     <img src="../images/blank-profile-picture.png" alt="Darien">
                     <h2>Darien Ramirez-Hennessey</h2>
