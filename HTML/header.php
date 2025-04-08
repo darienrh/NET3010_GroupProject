@@ -22,8 +22,8 @@ session_start(); // session must start!!!!!!
                     <li><a href="Cart.php">Cart</a></li>
                     <li><a href="About.php">About</a></li>
 
-                    <?php if (isset($_SESSION['username'])): ?>
-                        <li><a href="logout.php">Logout (<?= htmlspecialchars($_SESSION['username']); ?>)</a></li>
+                    <?php if (isset($_SESSION['user'])): ?>
+                        <li><a href="logout.php">Logout (<?= htmlspecialchars($_SESSION['user']); ?>)</a></li>
                     <?php else: ?>
                         <li><a href="UserRegistration.php">Sign Up</a></li>
                         <li><a href="LoginPage.php">Login</a></li>
