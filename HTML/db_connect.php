@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'my_website_db';
+$db   = 'groupprojectwebsite'; // Use the same name as in database_create.php
 $user = 'root';
 $pass = ''; // Use a strong password
 $charset = 'utf8mb4_general_ci';

@@ -3,7 +3,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'labwebsite');
+define('DB_NAME', 'groupprojectwebsite');
 
 $message = '';
 $message_class = '';
@@ -20,14 +20,13 @@ try {
     // Step 3: Select the database
     $conn->exec("USE " . DB_NAME);
 
-    // Step 4: Create the 'products' table
-    $tableSQL = "CREATE TABLE IF NOT EXISTS products (
-        product_id INT PRIMARY KEY,
-        product_name VARCHAR(100) NOT NULL,
-        manufacturer VARCHAR(100),
-        price DECIMAL(10, 2) NOT NULL,
-        in_stock BOOLEAN DEFAULT TRUE,
-        description TEXT,
+    // Step 4: Create the 'user' table
+    $tableSQL = "CREATE TABLE IF NOT EXISTS users (
+        users_id INT PRIMARY KEY,
+        user_name VARCHAR(100) NOT NULL,
+        user_password VARCHAR(50) NOT NULL,
+        user_permissions INT DEFAULT 2,
+        user_role ENUM('admin', 'customer') DEFAULT 'customer',
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     ) ENGINE=InnoDB";
 
