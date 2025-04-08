@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Verify password
             if ($password === $user['user_password']) {
-                $_SESSION['username'] = $user['user_name']; // Save login
+                $_SESSION['user'] = $user['user_name']; // Save login
                 $message = "Logged in!";
                 $message_class = 'message';
 
