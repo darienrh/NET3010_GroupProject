@@ -1,7 +1,8 @@
 <?php 
 include 'header.php'; 
-<link rel="stylesheet" href="StyleSheet.css">
 ?>
+<link rel="stylesheet" href="StyleSheet.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Image Slider on the home page -->
