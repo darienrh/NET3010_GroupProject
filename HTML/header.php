@@ -1,11 +1,6 @@
 <?php
-// Start the session (needed for login functionality)
-// session_start();
-
-// Database connection (using PDO for better security)
-// require_once 'db_connect.php';
+session_start(); // session must start!!!!!!
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,12 +21,13 @@
                     <li><a href="Products.php">Products</a></li>
                     <li><a href="Cart.php">Cart</a></li>
                     <li><a href="About.php">About</a></li>
-                    <li><a href="UserRegistration.php">Sign Up</a></li>
+
                     <?php if (isset($_SESSION['username'])): ?>
-                <li><a href="logout.php">Logout (<?= $_SESSION['username']; ?>)</a></li>
-            <?php else: ?>
-                <li><a href="LoginPage.php">Login</a></li>
-            <?php endif; ?>
+                        <li><a href="logout.php">Logout (<?= htmlspecialchars($_SESSION['username']); ?>)</a></li>
+                    <?php else: ?>
+                        <li><a href="UserRegistration.php">Sign Up</a></li>
+                        <li><a href="LoginPage.php">Login</a></li>
+                    <?php endif; ?>
                 </ul>
             </nav>
         </div>
