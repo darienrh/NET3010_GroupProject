@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'database_create.php'; // for DB credentials
-
+include 'header.php'; 
 $message = '';
 $message_class = '';
 
