@@ -1,5 +1,4 @@
 <?php
-// Database configuration
 ob_start(); // Optional: helps prevent header issues
 
 // Run the database creation script silently
@@ -31,38 +30,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if (empty($errors)) {
         try {
-            // Create database connection
-            $conn = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
+            // Connect using DB constants
+            $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            
+
             // Check if username already exists
-            $stmt = $conn->prepare("SELECT userID FROM users WHERE username = :username");
+            $stmt = $conn->prepare("SELECT users_id FROM users WHERE user_name = :username");
             $stmt->bindParam(':username', $username);
             $stmt->execute();
-            
+
             if ($stmt->rowCount() > 0) {
                 $errors[] = "Username already exists";
             } else {
-                // Hash password
-                // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-                
-                // Insert new user with default permissions (2) and role (customer)
+                // Hash the password for security
+                $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+                // Insert the new user
                 $stmt = $conn->prepare("INSERT INTO users 
-                                      (username, password, permissions, role, created_at) 
-                                      VALUES (:username, :password, 2, 'customer', NOW())");
+                    (user_name, user_password, user_permissions, user_role, created_at) 
+                    VALUES (:username, :password, 2, 'customer', NOW())");
                 $stmt->bindParam(':username', $username);
-                $stmt->bindParam(':password', $password);
+                $stmt->bindParam(':password', $hashed_password);
                 $stmt->execute();
-                
-                $message = "Registration successful! You can now login.";
+
+                $message = "Registration successful! You can now log in.";
                 $message_class = 'message';
             }
-        } catch(PDOException $e) {
+        } catch (PDOException $e) {
             $errors[] = "Database error: " . $e->getMessage();
         }
     }
-    
-    // If there are errors, show them
+
     if (!empty($errors)) {
         $message = implode("<br>", $errors);
         $message_class = 'error';
@@ -77,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </p>
     <?php endif; ?>
 
-    <form action="register.php" method="POST">
+    <form action="UserRegistration.php" method="POST">
         <input type="text" name="username" placeholder="Username" required 
                value="<?php echo isset($username) ? htmlspecialchars($username) : ''; ?>">
         <input type="email" name="email" placeholder="Email (optional)" 
