@@ -1,9 +1,5 @@
 <?php
 // Database configuration
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'groupprojectwebsite');
 ob_start(); // Optional: helps prevent header issues
 
 // Run the database creation script silently
