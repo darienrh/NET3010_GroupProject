@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once 'database_create.php'; // for DB credentials
 include 'header.php'; 
 $message = '';
@@ -27,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
             // Verify password
-            if (password_verify($password, $user['user_password'])) {
+            if ($password === $user['user_password']) {
                 $_SESSION['username'] = $user['user_name']; // Save login
                 $message = "Logged in!";
                 $message_class = 'message';

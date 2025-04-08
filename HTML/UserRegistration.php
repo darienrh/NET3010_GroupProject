@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $errors[] = "Username already exists";
             } else {
                 // Hash the password for security
-                //$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+                $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
                 // Insert the new user
                 $stmt = $conn->prepare("INSERT INTO users 
