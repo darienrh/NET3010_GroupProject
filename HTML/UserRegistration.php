@@ -43,14 +43,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $errors[] = "Username already exists";
             } else {
                 // Hash the password for security
-                $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+                //$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
                 // Insert the new user
                 $stmt = $conn->prepare("INSERT INTO users 
                     (user_name, user_password, user_permissions, user_role, created_at) 
                     VALUES (:username, :password, 2, 'customer', NOW())");
                 $stmt->bindParam(':username', $username);
-                $stmt->bindParam(':password', $hashed_password);
+                $stmt->bindParam(':password', $password);
                 $stmt->execute();
 
                 $message = "Registration successful! You can now log in.";

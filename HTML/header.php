@@ -26,17 +26,12 @@
                     <li><a href="Products.php">Products</a></li>
                     <li><a href="Cart.php">Cart</a></li>
                     <li><a href="About.php">About</a></li>
-                    <li><a href="LoginPage.php">Login</a></li>
                     <li><a href="UserRegistration.php">Sign Up</a></li>
-                    
-                    <!-- <?php if (isset($_SESSION['user_id'])): ?>
-                        <li><a href="User_deals.php">Exclusive Deals</a></li>
-                        <li><a href="logout.php">Logout</a></li>
-                        <li class="welcome-msg">Welcome, <?= htmlspecialchars($_SESSION['username']) ?>!</li>
-                    <?php else: ?>
-                        <li><a href="LoginPage.php">Login</a></li>
-                        <li><a href="UserRegistration.php">Sign Up</a></li>
-                    <?php endif; ?> -->
+                    <?php if (isset($_SESSION['username'])): ?>
+                <li><a href="logout.php">Logout (<?= $_SESSION['username']; ?>)</a></li>
+            <?php else: ?>
+                <li><a href="LoginPage.php">Login</a></li>
+            <?php endif; ?>
                 </ul>
             </nav>
         </div>
