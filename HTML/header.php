@@ -1,6 +1,8 @@
-<!-- Darien Ramirez-Hennessey, Alex Barnard "add your name whoever else worked on this"  -->
+<!-- Darien Ramirez-Hennessey, Alex Barnard "add your name whoever else worked on this" -->
 <?php
-session_start(); // session must start!!!!!!
+if (session_status() === PHP_SESSION_NONE) {
+    session_start(); // session must start!!!!!!
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
