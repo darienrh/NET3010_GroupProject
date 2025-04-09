@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $stmt->fetch();
 
     if ($user && password_verify($_POST['password'], $user['password'])) {
-        $_SESSION['user'] = $user['first_name']; // store name in session
-        header("Location: index.php");
+        $_SESSION['user'] = $user['user_name']; // store name in session
+        header("Location: LandingPage.php");
         exit();
     } else {
         echo "Invalid credentials.";

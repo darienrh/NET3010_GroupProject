@@ -1,12 +1,11 @@
 
 <?php
-// Darien Ramirez-Hennessey
-// Date: 04/08/2025
-ob_start(); //helps prevent header issues
+ob_start(); // Optional: helps prevent header issues
 
 // Run the database creation script silently
 include_once 'database_create.php'; // Will only run once per page load
 
+// Now continue with your registration logic below
 $pageTitle = "Register Page";
 
 $message = '';
@@ -40,13 +39,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($stmt->rowCount() > 0) {
                 $errors[] = "Username already exists";
             } else {
-                $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+                //$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
                 $stmt = $conn->prepare("INSERT INTO users 
                     (user_name, user_password, user_permissions, user_role, created_at) 
                     VALUES (:username, :password, 2, 'customer', NOW())");
                 $stmt->bindParam(':username', $username);
-                $stmt->bindParam(':password', $hashed_password);
+                $stmt->bindParam(':password', $password);
                 $stmt->execute();
 
                 $message = "Registration successful! You can now log in.";
@@ -72,72 +71,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="StyleSheet.css">
 </head>
 <body>
-<<<<<<< HEAD
-<div class="navbar">
-            <div class="logo">
-                <img src="Logo.png" width="200px">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="LandingPage.php">Home</a></li>
-                    <li><a href="Products.php">Products</a></li>
-                    <li><a href="Cart.php">Cart</a></li>
-                    <li><a href="About.php">About</a></li>
-                    <li><a href="UserRegistration.php">Sign up</a></li>
-                    <li><a href="LoginPage.php">Login</a></li>
-                </ul>
-            </nav>
-    
-        </div>
-    <main class=register-page>
-        <section class="container">
-        <header>User Registration</header>
-        <form action="#" class="form">
-            <div class="row">
-                <div class="Input">
-                    <label>First Name</label>
-                    <input type="text" placeholder="Enter First Name">
-                </div>
-                <div class="Input">
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Enter Last Name">
-                </div>
-            </div>
-            <div class="Input">
-                <label>Email</label>
-                <input type="text" placeholder="Enter Email">
-            </div>
-            <div class="Input">
-                <label>Username</label>
-                <input type="text" placeholder="Enter Username">
-            </div>
-            <div class="Input">
-                <label>Password</label>
-                <input type="text" placeholder="Enter Password">
-            </div>
-            <div class="button-wrapper">
-                <button type="button" id="submitButton" class="button">
-                    Register Account
-                </button>
-            </div>
-        </form>
-        <script>
-            document.addEventListener(
-                'DOMContentLoaded', () => {
-                    document.getElementById('submitButton').
-                        addEventListener('click', function () {
-                            alert('Account Registered!');
-                        });
-                }
-            )
-        </script>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Gizmo Galaxy. All rights reserved.</p>
-    </footer>
-</body>
-=======
     <?php include 'header.php'; ?>
 
     <div class="main-content">
