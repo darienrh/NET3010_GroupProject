@@ -49,7 +49,10 @@ include 'header.php';
     <section class="about-us">
         <div class="about-container">
             <h4>Some info about the company</h4>
+            <p>Gizmo Galaxy is your one-stop shop for all things tech. We offer a wide range of products, from the latest gadgets to essential accessories. Our mission is to provide high-quality products at competitive prices, ensuring that you get the best value for your money.</p>
             <p>Background about us</p>
+            <p>Gizmo Galaxy was founded in 2023 and this is so real by a group of tech enthusiasts who wanted to create a platform where customers could find the best deals on the latest technology. We are committed to providing excellent customer service and ensuring that our customers have a seamless shopping experience.</p>
+            <p>Our team is dedicated to curating a selection of products that meet the highest standards of quality and performance. We work closely with our suppliers to ensure that we offer the latest and most innovative products on the market.</p>
         </div>
     </section>
     

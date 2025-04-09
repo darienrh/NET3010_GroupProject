@@ -3,9 +3,9 @@
 <?php
 // Sample products data
 $products = [
-    ['id' => 1, 'name' => 'Micro Processor', 'image' => 'images/Micro_Processor.jpg', 'price' => 199.99],
-    ['id' => 2, 'name' => 'Motherboard', 'image' => 'images/Mobo_concrete_background.jpg', 'price' => 149.99],
-    ['id' => 3, 'name' => 'Peripheral Set', 'image' => 'images/jay-zhang-dF0nne1hnzQ-unsplash.jpg', 'price' => 89.99],
+    ['id' => 1, 'name' => 'Micro Processor', 'image' => '../images/Micro_Processor.jpg', 'price' => 199.99],
+    ['id' => 2, 'name' => 'Motherboard', 'image' => '../images/Mobo_concrete_background.jpg', 'price' => 149.99],
+    ['id' => 3, 'name' => 'Peripheral Set', 'image' => '../images/jay-zhang-dF0nne1hnzQ-unsplash.jpg', 'price' => 89.99],
 ];
 
 // Add to cart functionality
