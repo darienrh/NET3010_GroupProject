@@ -9,7 +9,7 @@
         <h1>Your Cart</h1>
         <p>Your cart is currently empty.</p>
     </main>
-=======
+
     <div class="main-content">
         <main>
             <h1>Your Cart</h1>
