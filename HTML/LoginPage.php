@@ -1,9 +1,7 @@
-
 <?php
-//Darien Ramirez-Hennessey
+// Darien Ramirez-Hennessey
 // Date: 04/08/2025
 require_once 'database_create.php'; // for DB credentials
-include 'header.php'; 
 $message = '';
 $message_class = '';
 
@@ -13,11 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     try {
-        // Connect to DB
         $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        // Check if user exists
         $stmt = $conn->prepare("SELECT * FROM users WHERE user_name = :username");
         $stmt->bindParam(':username', $username);
         $stmt->execute();
@@ -27,14 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $message_class = 'error';
         } else {
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-            // Verify password
             if ($password === $user['user_password']) {
-                $_SESSION['user'] = $user['user_name']; // Save login
+                $_SESSION['user'] = $user['user_name'];
                 $message = "Logged in!";
                 $message_class = 'message';
-
-                // Redirect after a short delay
                 header("refresh:1; url=LandingPage.php");
             } else {
                 $message = "Incorrect password.";
@@ -56,21 +48,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="StyleSheet.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
+    <?php include 'header.php'; ?>
+    <div class="main-content">
+        <main class="login-page">
+            <section class="container">
+                <header>Account Login</header>
 
-        <?php if (!empty($message)): ?>
-            <p class="<?php echo $message_class; ?>">
-                <?php echo $message; ?>
-            </p>
-        <?php endif; ?>
+                <?php if (!empty($message)): ?>
+                    <p class="<?php echo $message_class; ?>">
+                        <?php echo $message; ?>
+                    </p>
+                <?php endif; ?>
 
-        <form method="POST" action="LoginPage.php">
-            <input type="text" name="username" placeholder="Username" required 
-                   value="<?php echo isset($username) ? htmlspecialchars($username) : ''; ?>">
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Log In</button>
-        </form>
+                <form method="POST" action="LoginPage.php" class="form">
+                    <div class="row">
+                        <div class="Input">
+                            <label>Username</label>
+                            <input type="text" name="username" placeholder="Enter Username" required 
+                                   value="<?php echo isset($username) ? htmlspecialchars($username) : ''; ?>">
+                        </div>
+                        <div class="Input">
+                            <label>Password</label>
+                            <input type="password" name="password" placeholder="Enter Password" required>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button type="submit" class="button" id="submitButton">Login</button>
+                    </div>
+                </form>
+            </section>
+        </main>
     </div>
+
+    <?php include 'footer.php'; ?>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('submitButton');
+            if (btn) {
+                btn.addEventListener('click', () => {
+                    // Optional alert (for consistency with second page)
+                    console.log('Login submitted');
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,4 +1,8 @@
+<!-- Darien Ramirez-Hennessey, Alex Barnard "add your name whoever else worked on this" -->
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start(); // session must start!!!!!!
+}
 session_start(); // session must start!!!!!!
 //darien ramirez-hennessey and alexander bernard
 ?>
