@@ -32,6 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+            // Check if email is already taken
+            $stmt = $conn->prepare("SELECT * FROM users WHERE user_email = :email");
+            $stmt->bindParam(':email', $email);
+            $stmt->execute();
+
             $stmt = $conn->prepare("SELECT users_id FROM users WHERE user_name = :username");
             $stmt->bindParam(':username', $username);
             $stmt->execute();
@@ -125,4 +130,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include 'footer.php'; ?>
 </body>
 </html>
->>>>>>> 14f8abddf2f1934e85bb73cdb4c70a8a9b5bd9df

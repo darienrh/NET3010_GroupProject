@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,9 +30,6 @@
     
         </div>
     </header>
-=======
-<?php include 'header.php'; ?>    
->>>>>>> 14f8abddf2f1934e85bb73cdb4c70a8a9b5bd9df
 
     <script>
         // Form submission event listener
