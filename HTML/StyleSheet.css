@@ -232,6 +232,10 @@ main {
 }
 
 .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25;
     max-width: 250px;
     background-color: #f2f2f2;
     padding: 20px;
