@@ -1,12 +1,10 @@
 <?php include 'header.php'; ?>
 
-<h1>Welcome to your account, <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
-<p>This page is only visible to logged-in users.</p>
-
 <?php
 // Sample deals data
+//darien ramirez-hennessey
 $deals = [
-    ['id' => 1, 'name' => 'Deal 1', 'image' => 'deal1.jpg', 'price' => 10],
+    ['id' => 1, 'name' => 'Deal 1', 'image' => 'images\bunny.png', 'price' => 10],
     ['id' => 2, 'name' => 'Deal 2', 'image' => 'deal2.jpg', 'price' => 20],
     ['id' => 3, 'name' => 'Deal 3', 'image' => 'deal3.jpg', 'price' => 30],
 ];

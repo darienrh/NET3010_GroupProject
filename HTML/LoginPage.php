@@ -3,7 +3,8 @@ require_once 'database_create.php'; // for DB credentials
 include 'header.php'; 
 $message = '';
 $message_class = '';
-
+//darien ramirez-hennessey
+// Alexander 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
