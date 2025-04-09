@@ -2,6 +2,7 @@
 
 <?php
 // Sample products data
+// darien ramirez-hennessey
 $products = [
     ['id' => 1, 'name' => 'Micro Processor', 'image' => '../images/Micro_Processor.jpg', 'price' => 199.99],
     ['id' => 2, 'name' => 'Motherboard', 'image' => '../images/Mobo_concrete_background.jpg', 'price' => 149.99],
