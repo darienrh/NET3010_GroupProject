@@ -20,14 +20,15 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="LandingPage.html">Home</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="Cart.html">Cart</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="UserRegistration.html">Sign up</a></li>
-                <li><a href="LoginPage.html">Login</a></li>
+                    <li><a href="LandingPage.php">Home</a></li>
+                    <li><a href="Products.php">Products</a></li>
+                    <li><a href="Cart.php">Cart</a></li>
+                    <li><a href="About.php">About</a></li>
+                    <li><a href="UserRegistration.php">Sign up</a></li>
+                    <li><a href="LoginPage.php">Login</a></li>
                 </ul>
             </nav>
+    
         </div>
 
 

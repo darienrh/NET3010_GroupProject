@@ -11,22 +11,30 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="Logo.png" width="200px">
+<header>
+        <img class="logo" src="" alt="">
+        <h1>
+            <i>Welcome to Gizmo Galaxy - The home of out of this world deals</i>
+        </h1>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo.png" width="200px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="LandingPage.php">Home</a></li>
+                    <li><a href="Products.php">Products</a></li>
+                    <li><a href="Cart.php">Cart</a></li>
+                    <li><a href="About.php">About</a></li>
+                    <li><a href="UserRegistration.php">Sign up</a></li>
+                    <li><a href="LoginPage.php">Login</a></li>
+                </ul>
+            </nav>
+    
         </div>
-        <nav>
-            <ul>
-                <li><a href="LandingPage.html">Home</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="Cart.html">Cart</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="UserRegistration.html">Sign up</a></li>
-                <li><a href="LoginPage.html">Login</a></li>
-            </ul>
-        </nav>
-
-    </div>
+    
+        </div>
+    </header>
 
     <!-- Image Slider on the home page -->
     <section class="container">
@@ -43,13 +51,6 @@
             </div>
         </div>
     </section>
-
-
-
-    <header>
-        <h1>Welcome to Gizmo Galaxy - The home of out of this world deals</h1>
-    </header>
-
 
     <?php include 'footer.php'; ?>
 
