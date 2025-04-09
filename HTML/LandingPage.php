@@ -5,9 +5,12 @@
 // Rafay Khan
 include 'header.php'; 
 ?>
+<<<<<<< HEAD
+=======
 <link rel="stylesheet" href="StyleSheet.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+>>>>>>> b21536620f78e0ea5cdcb4860d0b1e8f3841ebf8
 
 <!-- Image Slider on the home page -->
 

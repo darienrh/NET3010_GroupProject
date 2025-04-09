@@ -19,11 +19,11 @@ $products = [
     ['id' => 11, 'name' => 'Gigabyte Aero Z790 Motherboard', 'image' => '../images/pexels-zeleboba-18286300.jpg', 'price' => 169.99],
     ['id' => 12, 'name' => '32GB XPG DDR5 RAM', 'image' => '../images/RAM_wood_background.jpg', 'price' => 69.99],
     ['id' => 13, 'name' => '1TB Hard Drive', 'image' => '../images/william-warby-NIpQvMn5RTk-unsplash.jpg', 'price' => 59.99],
-];
+]; //manually creat an array of products to display on the page and add to the cart
 
 
 // Add to cart functionality
-if (isset($_GET['add_to_cart'])) {
+if (isset($_GET['add_to_cart'])) { //this is the link that will add the item to the cart
     $product_id = $_GET['add_to_cart'];
     foreach ($products as $product) {
         if ($product['id'] == $product_id) {
