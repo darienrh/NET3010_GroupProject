@@ -1,5 +1,5 @@
-<?php
 //Darien Ramirez-Hennessey, "add your name whoever else worked on this"
+<?php
 session_start(); // session must start!!!!!!
 ?>
 <!DOCTYPE html>
