@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Add meta information -->
-<head>
-    
-    <link rel="stylesheet" href="StyleSheet.css">
+<?php include 'header.php'; ?>    
 
+<<<<<<< HEAD
     <title>Your Cart</title>
 </head>
 <body>
@@ -38,9 +36,16 @@
         <h1>Your Cart</h1>
         <p>Your cart is currently empty.</p>
     </main>
+=======
+    <div class="main-content">
+        <main>
+            <h1>Your Cart</h1>
+            <p>Your cart is currently empty.</p>
+        </main>
+    </div>
+    
+>>>>>>> 14f8abddf2f1934e85bb73cdb4c70a8a9b5bd9df
 
     
-    <footer>
-        <p>&copy; 2025 Gizmo Galaxy. All rights reserved.</p>
-    </footer>
+    <?php include 'footer.php'; ?>
 </body>

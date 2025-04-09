@@ -1,6 +1,7 @@
-CREATE DATABASE computer_parts_db;
-USE computer_parts_db;
+CREATE DATABASE my_website_db;
+USE my_website_db;
 
+-- Create the products table
 CREATE TABLE products (
     product_id INT PRIMARY KEY,
     product_name VARCHAR(100) NOT NULL,
