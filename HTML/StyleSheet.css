@@ -78,7 +78,7 @@ body {
     margin: 0;     
     padding: 0;
     line-height: 1.4;
-    background-color: #659d77;
+    background-color: #aeb3b0;
     display: flex;
     flex-direction: column;
 }
@@ -95,6 +95,52 @@ main {
     min-height: calc(90vh - 60px);
     display: flex;
     flex-direction: column;
+}
+
+/* Cart table styles - Alex */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px; /* Increased margin */
+    background-color: #e0dddd;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    border-radius: 12px; /* More rounded corners */
+    overflow: hidden;
+    font-size: 2.5rem; /* Larger font in table */
+}
+
+/* Table header styles */
+.cart-table thead {
+    background-color: #18324c;
+    color: white;
+}
+
+.cart-table th {
+    padding: 18px; /* Increased padding */
+    text-align: left;
+    font-weight: bold;
+}
+
+.cart-table td {
+    padding: 15px; /* Increased padding */
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Styling for product image in cart */
+.cart-table td img {
+    width: 250px; /* Increased image size */
+    height: auto;
+    border-radius: 10px; /* More rounded corners */
+}
+
+/* Table row styles */
+.cart-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #f1f1f1;
 }
 
 
@@ -182,6 +228,8 @@ main {
     opacity: 1;
 }
 
+/* Styling for the Products Page -- Alex*/
+
 .product img {
     max-width: 50%;
     height: auto;
@@ -190,7 +238,9 @@ main {
     border-radius: 10px; /* Rounded corners */
 }
 
-/* Styling for the Products Page -- Alex*/
+.product {
+    font-size: 2rem;
+}
 
 .featured-products {
     display: flex;
@@ -232,15 +282,16 @@ main {
 }
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25;
-    max-width: 250px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-content: center; /* still center grid */
+    gap: 30px;
+    padding: 40px;
+    max-width: 100%;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .products img {
@@ -308,7 +359,7 @@ main {
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: url("Images/christian-wiediger-c3ZWXOv1Ndc-unsplash.jpg") center/cover no-repeat;
+    background: url("../images/christian-wiediger-c3ZWXOv1Ndc-unsplash.jpg") center/cover no-repeat;
     filter: blur(3px) brightness(0.6);
     z-index: -1;
 }
@@ -351,7 +402,7 @@ main {
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: url("Images/christian-wiediger-c3ZWXOv1Ndc-unsplash.jpg") center/cover no-repeat;
+    background: url("../images/christian-wiediger-c3ZWXOv1Ndc-unsplash.jpg") center/cover no-repeat;
     filter: blur(3px) brightness(0.6);
     z-index: -1;
 }
