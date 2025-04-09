@@ -3,7 +3,6 @@
 
 <?php include 'header.php'; ?>    
 
-<<<<<<< HEAD
     <title>Your Cart</title>
 </head>
 <body>
