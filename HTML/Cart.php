@@ -3,6 +3,7 @@
 
 <?php include 'header.php'; ?>    
 <?php
+//darien ramirez-hennessey
 $cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
 ?>
 
