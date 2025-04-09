@@ -1,5 +1,6 @@
 // fetchCurrencyRates.js
-
+// Darien Ramirez-Hennessey
+// Alexander Barnard
 const apiKey = 'f1bf8cbc09d740fb30ac1abf748724b9';
 const baseUrl = 'http://data.fixer.io/api/latest';
 
