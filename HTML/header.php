@@ -3,8 +3,6 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start(); // session must start!!!!!!
 }
-session_start(); // session must start!!!!!!
-//darien ramirez-hennessey and alexander bernard
 ?>
 <!DOCTYPE html>
 <html lang="en">
