@@ -16,7 +16,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <header>
         <div class="navbar">
             <div class="logo">
-                <img src="Images/Logo.png" width="200px" alt="Gizmo Galaxy Logo">
+                <img src="../Images/Logo.png" width="200px" alt="Gizmo Galaxy Logo">
             </div>
             <nav>
                 <ul>
