@@ -51,6 +51,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $message = "Registration successful! You can now log in.";
                 $message_class = 'message';
             }
+            header("Location: LoginPage.php");
+            exit();
         } catch (PDOException $e) {
             $errors[] = "Database error: " . $e->getMessage();
         }

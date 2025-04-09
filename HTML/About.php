@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 
 
 <!DOCTYPE html>
 <html lang="en">
-=======
-<?php include 'header.php'; ?>    
->>>>>>> 14f8abddf2f1934e85bb73cdb4c70a8a9b5bd9df
 
-<!--Team memeber grid -Rayyan--> 
+<!--Team member grid -Rayyan--> 
     <div class="main-content">
         <main>
             <section class="team">
@@ -26,7 +22,7 @@
                     <h2>Rafay Khan</h2>
                     <p>Front End Designer</p>
                 </div>
-                <!--Team memeber grid for Darien--> 
+                <!--Team member grid for Darien--> 
                 <div class="member">
                     <img src="../images/blank-profile-picture.png" alt="Darien">
                     <h2>Darien Ramirez-Hennessey</h2>
