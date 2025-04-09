@@ -4,6 +4,38 @@ include 'header.php';
 <link rel="stylesheet" href="StyleSheet.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<<<<<<< HEAD
+    <script src="api.java"></script>
+
+</head>
+
+<body>
+<header>
+        <img class="logo" src="" alt="">
+        <h1>
+            <i>Welcome to Gizmo Galaxy - The home of out of this world deals</i>
+        </h1>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo.png" width="200px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="LandingPage.php">Home</a></li>
+                    <li><a href="Products.php">Products</a></li>
+                    <li><a href="Cart.php">Cart</a></li>
+                    <li><a href="About.php">About</a></li>
+                    <li><a href="UserRegistration.php">Sign up</a></li>
+                    <li><a href="LoginPage.php">Login</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+    
+        </div>
+    </header>
+=======
+>>>>>>> 14f8abddf2f1934e85bb73cdb4c70a8a9b5bd9df
 
     <!-- Image Slider on the home page -->
 
@@ -21,6 +53,8 @@ include 'header.php';
             </div>
         </div>
     </section>
+<<<<<<< HEAD
+=======
     <div class="hero">
         <div class="hero-content">
         <h1>Welcome to Gizmo Galaxy - The home of out of this world deals</h1>
@@ -58,6 +92,7 @@ include 'header.php';
 
 
 
+>>>>>>> 14f8abddf2f1934e85bb73cdb4c70a8a9b5bd9df
 
     <?php include 'footer.php'; ?>
 

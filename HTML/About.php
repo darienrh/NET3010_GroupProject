@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+
+
+<!DOCTYPE html>
+<html lang="en">
+=======
 <?php include 'header.php'; ?>    
+>>>>>>> 14f8abddf2f1934e85bb73cdb4c70a8a9b5bd9df
 
 <!--Team memeber grid -Rayyan--> 
     <div class="main-content">
