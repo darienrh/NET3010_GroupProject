@@ -1,4 +1,7 @@
+
 <?php
+//Darien Ramirez-Hennessey
+
 session_start();
 require 'db_connection.php';
 

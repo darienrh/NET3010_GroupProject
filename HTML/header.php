@@ -1,5 +1,5 @@
-//Darien Ramirez-Hennessey, "add your name whoever else worked on this"
 <?php
+//Darien Ramirez-Hennessey, "add your name whoever else worked on this"
 session_start(); // session must start!!!!!!
 ?>
 <!DOCTYPE html>
@@ -28,6 +28,9 @@ session_start(); // session must start!!!!!!
                     <?php else: ?>
                         <li><a href="UserRegistration.php">Sign Up</a></li>
                         <li><a href="LoginPage.php">Login</a></li>
+                    <?php endif; ?>
+                    <?php if (isset($_SESSION['user'])): ?>
+                        <li><a href="User_deals.php">Deals! (<?= htmlspecialchars($_SESSION['user']); ?>)</a></li>
                     <?php endif; ?>
                 </ul>
             </nav>

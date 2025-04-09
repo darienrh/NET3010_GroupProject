@@ -1,5 +1,5 @@
 <?php
-// Initial connection (no DB selected yet)
+// Initial connection
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
@@ -9,18 +9,16 @@ $message = '';
 $message_class = '';
 
 try {
-    // Step 1: Connect to MySQL server
     $conn = new PDO("mysql:host=" . DB_HOST, DB_USER, DB_PASS);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Step 2: Create the database if it doesn't exist
     $conn->exec("CREATE DATABASE IF NOT EXISTS " . DB_NAME);
     $message .= "Database '" . DB_NAME . "' created or already exists.<br>";
 
-    // Step 3: Select the database
-    $conn->exec("USE " . DB_NAME);
+    
+    $conn->exec("USE " . DB_NAME);//Select the database
 
-    // Step 4: Create the 'user' table
+    //Create the 'user' table
     $tableSQL = "CREATE TABLE IF NOT EXISTS users (
         users_id INT AUTO_INCREMENT PRIMARY KEY,
         user_name VARCHAR(100) NOT NULL,

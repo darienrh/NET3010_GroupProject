@@ -1,6 +1,7 @@
+
+<?php
 //Darien Ramirez-Hennessey
 // Date: 04/08/2025
-<?php
 ob_start(); //helps prevent header issues
 
 // Run the database creation script silently
