@@ -1,4 +1,5 @@
 <?php
+//darien ramirez-hennessey
 $host = 'localhost';
 $db   = 'groupprojectwebsite'; // Use the same name as in database_create.php
 $user = 'root';

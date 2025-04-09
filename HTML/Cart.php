@@ -2,21 +2,8 @@
 <html lang="en">
 
 <?php include 'header.php'; ?>    
-
-    <title>Your Cart</title>
-</head>
-    <main>
-        <h1>Your Cart</h1>
-        <p>Your cart is currently empty.</p>
-    </main>
-
-    <div class="main-content">
-        <main>
-            <h1>Your Cart</h1>
-            <p>Your cart is currently empty.</p>
-        </main>
-    </div>
-    <?php
+<?php
+//darien ramirez-hennessey
 $cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
 ?>
 

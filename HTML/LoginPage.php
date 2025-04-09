@@ -3,7 +3,8 @@ require_once 'database_create.php'; // for DB credentials
 include 'header.php'; 
 $message = '';
 $message_class = '';
-
+//darien ramirez-hennessey
+// Alexander 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
@@ -45,29 +46,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login - Gizmo Galaxy</title>
-    <link rel="stylesheet" href="StyleSheet.css">
-</head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
+    <div class="main-content">
+        <main class="login-page">
+            <section class="container">
+                <header>Login</header>
 
-        <?php if (!empty($message)): ?>
-            <p class="<?php echo $message_class; ?>">
-                <?php echo $message; ?>
-            </p>
-        <?php endif; ?>
+                <?php if (!empty($message)): ?>
+                    <p class="<?php echo $message_class; ?>">
+                        <?php echo $message; ?>
+                    </p>
+                <?php endif; ?>
 
-        <form method="POST" action="LoginPage.php">
-            <input type="text" name="username" placeholder="Username" required 
-                   value="<?php echo isset($username) ? htmlspecialchars($username) : ''; ?>">
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Log In</button>
-        </form>
+                <form method="POST" action="LoginPage.php" class="form">
+                    <div class="row">
+                        <div class="Input">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" placeholder="Enter Username" required 
+                                   value="<?php echo isset($username) ? htmlspecialchars($username) : ''; ?>">
+                        </div>
+                    </div>
+
+                    <div class="Input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                    </div>
+
+                    <div class="button-wrapper">
+                        <button type="submit" class="button" id="submitButton">Log In</button>
+                    </div>
+                </form>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        document.getElementById('submitButton')
+                            .addEventListener('click', () => {
+                                console.log('User Logged In!');
+                            });
+                    });
+                </script>
+            </section>
+        </main>
     </div>
+
+    <?php include 'footer.php'; ?>
 </body>
 </html>

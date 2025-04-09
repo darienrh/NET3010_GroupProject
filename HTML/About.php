@@ -20,13 +20,13 @@ include 'header.php';
                     <p>Front End Developer</p>
                 </div>
                 <div class="member">
-                    <img src="../images/blank-profile-picture.png" alt="Rafay">
+                    <img src="../images/myonlyimage.jpg" alt="Rafay">
                     <h2>Rafay Khan</h2>
                     <p>Front End Designer</p>
                 </div>
                 <!--Team member grid for Darien--> 
                 <div class="member">
-                    <img src="../images/blank-profile-picture.png" alt="Darien">
+                    <img src="../images/gorilla.jpg" alt="Darien">
                     <h2>Darien Ramirez-Hennessey</h2>
                     <p>Back End Developer</p>
                 </div>

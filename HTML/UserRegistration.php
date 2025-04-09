@@ -1,11 +1,10 @@
 
 <?php
-ob_start(); // Optional: helps prevent header issues
+ob_start(); // Start output buffering
 
 // Run the database creation script silently
 include_once 'database_create.php'; // Will only run once per page load
 
-// Now continue with your registration logic below
 $pageTitle = "Register Page";
 
 $message = '';

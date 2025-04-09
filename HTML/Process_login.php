@@ -1,7 +1,7 @@
 
 <?php
 //Darien Ramirez-Hennessey
-
+// Alex Barnard
 session_start();
 require 'db_connection.php';
 
