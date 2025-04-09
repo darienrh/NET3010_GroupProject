@@ -4,7 +4,7 @@ include 'header.php';
 
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include 'header.php'; ?>
 <!--Team member grid -Rayyan--> 
     <div class="main-content">
         <main>
