@@ -3,6 +3,8 @@
 <?php
 // Sample products data
 // darien ramirez-hennessey
+
+
 $products = [
     ['id' => 1, 'name' => 'Micro Processor', 'image' => '../images/Micro_Processor.jpg', 'price' => 199.99],
     ['id' => 2, 'name' => 'Motherboard', 'image' => '../images/Mobo_concrete_background.jpg', 'price' => 149.99],
@@ -18,6 +20,7 @@ $products = [
     ['id' => 12, 'name' => '32GB XPG DDR5 RAM', 'image' => '../images/RAM_wood_background.jpg', 'price' => 69.99],
     ['id' => 13, 'name' => '1TB Hard Drive', 'image' => '../images/william-warby-NIpQvMn5RTk-unsplash.jpg', 'price' => 59.99],
 ];
+
 
 // Add to cart functionality
 if (isset($_GET['add_to_cart'])) {
