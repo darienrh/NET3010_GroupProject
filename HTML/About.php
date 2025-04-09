@@ -13,12 +13,12 @@
                     <p>Team Leader</p>
                 </div>
                 <div class="member">
-                    <img src="" alt="Alex">
+                    <img src="../images/blank-profile-picture.png" alt="Alex">
                     <h2>Alex Barnard</h2>
                     <p>Front End Developer</p>
                 </div>
                 <div class="member">
-                    <img src="" alt="Rafay">
+                    <img src="../images/blank-profile-picture.png" alt="Rafay">
                     <h2>Rafay Khan</h2>
                     <p>Front End Designer</p>
                 </div>
