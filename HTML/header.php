@@ -34,6 +34,9 @@ if (session_status() === PHP_SESSION_NONE) {
                     <?php if (isset($_SESSION['user'])): ?>
                         <li><a href="User_deals.php">Deals! (<?= htmlspecialchars($_SESSION['user']); ?>)</a></li>
                     <?php endif; ?>
+                    <?php if ($_SESSION['role'] === 'admin'): ?>
+                        <li><a href="admin.php">Admin Dashboard (<?= htmlspecialchars($_SESSION['user']); ?>)</a></li>
+                    <?php endif; ?>
                 </ul>
             </nav>
         </div>
