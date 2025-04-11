@@ -31,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['user'] = $user['user_name']; // Save login
                 $message = "Logged in!";
                 $message_class = 'message';
+                $_SESSION['user_role'] = $user['user_role']; // Save user role
 
                 // Redirect after a short delay
                 header("refresh:1; url=LandingPage.php");

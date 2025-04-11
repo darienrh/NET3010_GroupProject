@@ -4,7 +4,40 @@
 ?>
 <?php include 'header.php'; ?>
 <link rel="stylesheet" href="StylesSheet.css">
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $newRole = $_POST['role'];
 
+    // Database connection
+    $conn = new mysqli('localhost', 'root', '', 'groupprojectwebsite');
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Update user role
+    $stmt = $conn->prepare("UPDATE users SET user_role = ? WHERE user_name = ?");
+    $stmt->bind_param("ss", $newRole, $username);
+
+    if ($stmt->execute()) {
+        echo "<p>User role updated successfully!</p>";
+    } else {
+        echo "<p>Error updating user role: " . $stmt->error . "</p>";
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
+
+<form method="POST" action="">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="role">New Role:</label>
+    <input type="text" id="role" name="role" required>
+    <button type="submit">Update Role</button>
+</form>
 </head>
 <body>
     <div class="container">
