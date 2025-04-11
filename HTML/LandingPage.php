@@ -10,9 +10,9 @@ include 'header.php';
 <section class="landing-slider">
     <div class="slider-wrapper">
         <div class="slider">
-            <img id="slide-1" src="images/RAM_wood_background.jpg" alt="GPU Image">
-            <img id="slide-2" src="images/Mobo_concrete_background.jpg" alt="Micro_Processor">
-            <img id="slide-3" src=".images/Mouse_concrete_background.jpg" alt="PC">
+            <img id="slide-1" src="../images/RAM_wood_background.jpg" alt="GPU Image">
+            <img id="slide-2" src="../images/Mobo_concrete_background.jpg" alt="Micro_Processor">
+            <img id="slide-3" src="../images/Mouse_concrete_background.jpg" alt="PC">
         </div>
         <div class="slider-nav">
             <a href="#slide-1"></a>
@@ -32,17 +32,17 @@ include 'header.php';
         <div class="product">
             <h3>Product 1</h3>
             <p id="price-1">$99.99 CAD</p>
-            <img src="images/AIO_concrete_background.jpg" alt="Product 1">
+            <img src="../images/AIO_concrete_background.jpg" alt="Product 1">
         </div>
         <div class="product">
             <h3>Product 2</h3>
             <p id="price-2">$129.99 CAD</p>
-            <img src="images/RAM_white_background.jpg" alt="Product 2">
+            <img src="../images/RAM_white_background.jpg" alt="Product 2">
         </div>
         <div class="product">
             <h3>Product 3</h3>
             <p id="price-3">$149.99 CAD</p>
-            <img src="images/Fans_concrete_background.jpg" alt="Product 3">
+            <img src="../images/Fans_concrete_background.jpg" alt="Product 3">
         </div>
     </div>
 </section>
